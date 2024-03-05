@@ -1,0 +1,91 @@
+body {
+    background-color: whitesmoke;
+    color: #1e1e1e;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #030303;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-image: url('./assets/home.png');
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaaaaa;
+    color: whitesmoke;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 1em;
+}
+
+h1 {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 50px;
+    margin: 10px auto
+}
+
+h2, h3 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* abril fatface for recipe titles */
+/* Fugaz One for Header title */
+/* PT Sans for regular text */
