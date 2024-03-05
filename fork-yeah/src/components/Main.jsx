@@ -5,12 +5,12 @@ import Details from './Details'
 
 export default function Main () {
     return (
-        <>
-        <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/categories/:category' element={<List/>} />
-            <Route path='/meals/:id' element={<Details/>} />
-        </Routes>
-        </>
+        <main>
+            <Routes>
+                <Route path='/' element={<Home/>} />
+                <Route path='/categories/:category' element={<List/>} />
+                <Route path='/meals/:id' element={<Details/>} />
+            </Routes>
+        </main>
     )
 }

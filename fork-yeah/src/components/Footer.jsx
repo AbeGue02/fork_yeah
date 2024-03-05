@@ -1,15 +1,16 @@
 export default function Footer () {
     return (
-        <div className="Footer">
+        <footer>
             <div className="github">
-                <h5><a href="https://github.com/AbeGue02/fork_yeah">Github</a></h5>
+                <h4>Github</h4>
                 <ul>
-                    <li><button>button</button></li>
+                    <li><a href="https://github.com/AbeGue02/fork_yeah">Github</a></li>
                 </ul>
+                <button>button</button>
             </div>
 
             <div className="github">
-                <h5>Abraham Guerrero</h5>
+                <h4>Abraham Guerrero</h4>
                 <ul>
                     <li><a href="https://github.com/AbeGue02">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/abrahamdguerrero/">LinkedIn</a></li>
@@ -17,7 +18,7 @@ export default function Footer () {
             </div>
 
             <div className="github">
-                <h5>Felix Man</h5>
+                <h4>Felix Man</h4>
                 <ul>
                     <li><a href="https://github.com/felixm126">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/felix-man/">LinkedIn</a></li>
@@ -25,12 +26,12 @@ export default function Footer () {
             </div>
 
             <div className="github">
-                <h5>Daisy Ban</h5>
+                <h4>Daisy Ban</h4>
                 <ul>
                     <li><a href="https://github.com/toddlf705">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/daisy-ban/">LinkedIn</a></li>
                 </ul>
             </div>
-        </div>
+        </footer>
     )
 } 
