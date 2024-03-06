@@ -9,6 +9,7 @@ export default function Main () {
             <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/categories/:category' element={<List/>} />
+                <Route path='/search/:searchParam' element={<List/>} />
                 <Route path='/meals/:id' element={<Details/>} />
             </Routes>
         </main>
