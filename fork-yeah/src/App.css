@@ -12,6 +12,30 @@ header {
     background-color: #1e1e1e;
 }
 
+header input[type=text] {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #aaaaaa;
+}
+
+header input[type=text]::placeholder {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+header button {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -19,6 +43,10 @@ main {
 }
 
 .homeScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url('./assets/home.png');
     background-size: 100%;
     object-fit: cover;
@@ -26,7 +54,12 @@ main {
 }
 
 .homeScreen div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0.5;
     height: 100%;
+    margin: 10px;
 }
 
 nav {
@@ -53,7 +86,13 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    padding: 10px 1em;
+    padding: 10px 2em;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: whitesmoke;
 }
 
 h1 {
@@ -121,6 +160,7 @@ footer div ul {
 .horizontal-flex {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .vertical-flex {

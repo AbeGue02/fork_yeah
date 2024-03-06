@@ -8,7 +8,6 @@ export default function Footer () {
                 </ul>
                 <button>button</button>
             </div>
-
             <div className="github">
                 <h4>Abraham Guerrero</h4>
                 <ul>
@@ -16,7 +15,6 @@ export default function Footer () {
                     <li><a href="https://www.linkedin.com/in/abrahamdguerrero/">LinkedIn</a></li>
                 </ul>
             </div>
-
             <div className="github">
                 <h4>Felix Man</h4>
                 <ul>
@@ -24,7 +22,6 @@ export default function Footer () {
                     <li><a href="https://www.linkedin.com/in/felix-man/">LinkedIn</a></li>
                 </ul>
             </div>
-
             <div className="github">
                 <h4>Daisy Ban</h4>
                 <ul>
