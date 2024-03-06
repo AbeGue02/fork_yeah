@@ -54,9 +54,9 @@ export default function Details () {
                 <div className="ingredientList">
                     <div key={ingredients.strMeal}> <b>Ingredients: </b>
                     {
-                        ingredients.map((ingredient)=> 
-                            <div>{ingredient.ing}</div>
-                        )
+                        ingredients.map((ingredient)=> {
+                            if (ingredient.ing !== "null null") return <div>{ingredient.ing}</div>
+                        })
                     }         
                     </div>
                 </div>
