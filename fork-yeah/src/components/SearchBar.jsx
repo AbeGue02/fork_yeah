@@ -1,15 +1,18 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function SearchBar(props) {
+function SearchBar() {
+	
 	const [searchBarText, setSearchBarText] = useState('')
+	const navigate = useNavigate()
+	
 	const handleChange = (e) => {
 		setSearchBarText(e.target.value)
 	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		console.log('Searching Recipes..', searchBarText)
-
-		setSearchBarText('')
+		navigate(`/search/${searchBarText.split(' ').join('-')}`)
 	}
 
 	return (

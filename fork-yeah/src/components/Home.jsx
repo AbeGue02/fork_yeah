@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import LoadingSpinner from "./LoadingSpinner"
 
 export default function Home () {
     
@@ -24,19 +25,29 @@ export default function Home () {
 
     return (
         <div className="homeScreen">
-            <div className="categories">
-                {
-                    categories
-                    ? categories.map((category) => (
-                        <button
-                            key={category.idCategory}
-                            onClick={() => {
-                                navigate(`/categories/${category.strCategory}`)
-                            }}>{category.strCategory}</button>
-                    ))
-                    : <h2>Loading</h2>
+            
+            {
+                categories.length
+                ? (
+                    <div className="categories">
+                        {
+                            categories.map((category) => (
+                                <button
+                                    key={category.idCategory}
+                                    onClick={() => {
+                                        navigate(`/categories/${category.strCategory}`)
+                                    }}>{category.strCategory}
+                                </button>
+                            ))
+                        }
+                    </div>
+                ) : (
+                    <div>
+                        <LoadingSpinner/>
+                    </div>)
                 }
-            </div>
+            
+            
         </div>
     )
 }

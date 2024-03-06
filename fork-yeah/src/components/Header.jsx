@@ -7,7 +7,7 @@ export default function Header() {
 
 	return (
 		<div>
-			<header className='horizontal-flex'>
+			<header>
 				<h1>Fork Yeah!</h1>
 				<SearchBar />
 			</header>
