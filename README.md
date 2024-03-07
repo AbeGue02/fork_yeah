@@ -12,11 +12,13 @@ Our app is currently in the production stages. For now, just sit and wait. Fork 
 
 ## Wireframe
 
-![Coming soon!]()
+![Home-page](./assets/Home-page.png)
+![categories-page](./assets/categories-page.png)
+![details-page](./assets/details-page.png)
 
 ## Component Hierarchy Diagram
 
-![Coming Soon!]()
+![hierarchy-diagram](./assets/hierarchy-diagram.jpg)
 
 ### Sources
 
