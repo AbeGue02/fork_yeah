@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from 'axios'
+import LoadingSpinner from './LoadingSpinner'
 
 export default function Details () {
 
     const { id } = useParams()
 
-    const [details, setDetails] = useState([])
+    const [details, setDetails] = useState()
+    const [ingredients, setIngredients] = useState()
 
     useEffect(() => {
         const getDetails = async () => {
@@ -20,32 +22,37 @@ export default function Details () {
 
     useEffect(() => {
         console.log(details)
+        details && setIngredients(
+            [ 
+                {ing: `${details.strIngredient1} ${details.strMeasure1}`},
+                {ing: `${details.strIngredient2} ${details.strMeasure2}`},
+                {ing: `${details.strIngredient3} ${details.strMeasure3}`},
+                {ing: `${details.strIngredient4} ${details.strMeasure4}`},
+                {ing: `${details.strIngredient5} ${details.strMeasure5}`},
+                {ing: `${details.strIngredient6} ${details.strMeasure6}`},
+                {ing: `${details.strIngredient7} ${details.strMeasure7}`},
+                {ing: `${details.strIngredient8} ${details.strMeasure8}`},
+                {ing: `${details.strIngredient9} ${details.strMeasure9}`},
+                {ing: `${details.strIngredient10} ${details.strMeasure10}`},
+                {ing: `${details.strIngredient11} ${details.strMeasure11}`},
+                {ing: `${details.strIngredient12} ${details.strMeasure12}`},
+                {ing: `${details.strIngredient13} ${details.strMeasure13}`},
+                {ing: `${details.strIngredient14} ${details.strMeasure14}`},
+                {ing: `${details.strIngredient15} ${details.strMeasure15}`},
+                {ing: `${details.strIngredient16} ${details.strMeasure16}`},
+                {ing: `${details.strIngredient17} ${details.strMeasure17}`},
+                {ing: `${details.strIngredient18} ${details.strMeasure18}`},
+                {ing: `${details.strIngredient19} ${details.strMeasure19}`},
+                {ing: `${details.strIngredient20} ${details.strMeasure20}`}
+            ]
+        )
     }, [details])
 
 
-    const ingredients = [ {ing: `${details.strIngredient1} ${details.strMeasure1}`},
-                        {ing: `${details.strIngredient2} ${details.strMeasure2}`},
-                        {ing: `${details.strIngredient3} ${details.strMeasure3}`},
-                        {ing: `${details.strIngredient4} ${details.strMeasure4}`},
-                        {ing: `${details.strIngredient5} ${details.strMeasure5}`},
-                        {ing: `${details.strIngredient6} ${details.strMeasure6}`},
-                        {ing: `${details.strIngredient7} ${details.strMeasure7}`},
-                        {ing: `${details.strIngredient8} ${details.strMeasure8}`},
-                        {ing: `${details.strIngredient9} ${details.strMeasure9}`},
-                        {ing: `${details.strIngredient10} ${details.strMeasure10}`},
-                        {ing: `${details.strIngredient11} ${details.strMeasure11}`},
-                        {ing: `${details.strIngredient12} ${details.strMeasure12}`},
-                        {ing: `${details.strIngredient13} ${details.strMeasure13}`},
-                        {ing: `${details.strIngredient14} ${details.strMeasure14}`},
-                        {ing: `${details.strIngredient15} ${details.strMeasure15}`},
-                        {ing: `${details.strIngredient16} ${details.strMeasure16}`},
-                        {ing: `${details.strIngredient17} ${details.strMeasure17}`},
-                        {ing: `${details.strIngredient18} ${details.strMeasure18}`},
-                        {ing: `${details.strIngredient19} ${details.strMeasure19}`},
-                        {ing: `${details.strIngredient20} ${details.strMeasure20}`}]
+    
 
 
-    return (
+    return details && ingredients ? (
         <div className="detailsPage">
             
             <div>
@@ -66,9 +73,8 @@ export default function Details () {
                 <div className="mealName">{details.strMeal} ({details.strArea})</div>
                 <div className="instruction"><b>Instructions:</b> {details.strInstructions}</div>
             </div>
-            <div className="youtube">           
-                <iframe width="336" height="189" src="https://www.youtube.com/embed/4aZr5hZXP_s?si=vU0J3jYsdCj2CWTF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </div>
         </div> 
+    ) : (
+        <LoadingSpinner/>
     )
 }
