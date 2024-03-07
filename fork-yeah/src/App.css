@@ -47,6 +47,14 @@ main {
     flex: 1 0 auto;
 }
 
+.listScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px
+}
+
 .homeScreen {
     display: flex;
     flex-direction: column;
@@ -178,6 +186,7 @@ footer div {
     border-left: 1px solid gray;
     padding: 1em
 }
+
 footer div ul {
     list-style-type: none;
     margin: 0 auto;
@@ -187,27 +196,39 @@ footer div ul {
 
 .horizontal-flex {
     display: flex;
-    width: 400px;
     align-items: center;
     justify-content: center;
-    margin: 30px 20px 30px 20px;
 }
 
 .vertical-flex {
-    display: grid;
+    display: flex;
     text-align: center;
 }
 
-.vertical-flex button{
+.listItem {
+    width: 400px;
+    margin: 30px 20px 30px 20px;
+}
+
+.listItemImage {
+    width: 400px;
+}
+
+.listItemDetails h4 {
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.listItemButton {
     width: 120px;
     height: 40px;
-    margin: 0 auto;
-    margin-top: -20px;
+    margin: 10px;
+    margin-left: auto;
     border: none;
     color: white;
     background-color: rgba(61, 61, 61, 0.563);
     border-radius: 5px;
-    font-size: 15åpx;
+    font-size: 15px;
 }
 
 .slideup{
@@ -303,6 +324,37 @@ footer div ul {
     nav ul li {
         padding: 10px
     }
+
+    .listItem {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .listItemImage {
+        width: 200px;;
+    }
+
+    .slideup {
+        width: 200px;
+        margin-bottom: -95px;
+        height: 100px
+    }
+
+    .listItemDetails h4 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .listItemDetails button {
+        margin: 0px;
+    }
+}
+
+.resultsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* abril fatface for recipe titles */

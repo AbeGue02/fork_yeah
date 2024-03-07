@@ -6,12 +6,13 @@ export default function ListItem({ meal }) {
 	return (
 		<div className="listItem horizontal-flex">
 			<div className="listItemImageContainer">
-				<img src={meal.strMealThumb} width="400px" alt={'Not available'} />
+				<img src={meal.strMealThumb} alt={meal.strMeal} className='listItemImage' />
 			</div>
 			<div className="slideup">
-				<div className="vertical-flex">
+				<div className="listItemDetails">
 					<h4>{meal.strMeal}</h4>
 					<button
+						className='listItemButton'
 						onClick={() => {
 							navigate(`/meals/${meal.idMeal}`)
 						}}
