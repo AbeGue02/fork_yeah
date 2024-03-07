@@ -62,9 +62,6 @@ export default function Details () {
                 <div className="mealName">{details.strMeal} ({details.strArea})</div>
                 <div className="instruction"><b>Instructions:</b> {details.strInstructions}</div>
             </div>
-            <div className="youtube">           
-                <iframe width="336" height="189" src="https://www.youtube.com/embed/4aZr5hZXP_s?si=vU0J3jYsdCj2CWTF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </div>
         </div> 
     )
 }
