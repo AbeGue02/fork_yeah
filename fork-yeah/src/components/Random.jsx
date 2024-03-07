@@ -1,18 +1,14 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
 import axios from 'axios'
 
 export default function Details () {
 
-    const { id } = useParams()
 
     const [details, setDetails] = useState([])
 
     useEffect(() => {
         const getDetails = async () => {
-            let response = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
-            // let random = await axios.get("https://www.themealdb.com/api/json/v1/1/random.php") 
-            // if (details)
+            let response = await axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`)
             setDetails(response.data.meals[0])
         }
         getDetails()
