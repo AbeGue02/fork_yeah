@@ -12,13 +12,13 @@ Our app is currently in the production stages. For now, just sit and wait. Fork 
 
 ## Wireframe
 
-<img src = "Home page.png"> <br>
-<img src = "categories page.png"> <br>
-<img src = "details page.png">
+![Home-page](./assets/Home-page.png)
+![categories-page](./assets/categories-page.png)
+![details-page](./assets/details-page.png)
 
 ## Component Hierarchy Diagram
 
-<img src = "hierarchy diagram.png">
+![hierarchy-diagram](./assets/hierarchy-diagram.jpg)
 
 ### Sources
 
