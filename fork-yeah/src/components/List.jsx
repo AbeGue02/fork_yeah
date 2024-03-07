@@ -38,8 +38,9 @@ export default function List() {
 	}, [category, searchParam])
 
 	return (
-		<div>
-			<h3>
+		<main className='listScreen'>
+			<h2>Results found: </h2>
+			<div className='resultsList'>
 				{results && results.length > 0 ? (
 					results.map((result) => (
 						<ListItem key={result.idMeal} meal={result} />
@@ -47,7 +48,7 @@ export default function List() {
 				) : (
 					<p>No results found.</p>
 				)}
-			</h3>
-		</div>
+			</div>
+		</main>
 	)
 }
