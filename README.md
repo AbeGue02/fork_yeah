@@ -12,11 +12,13 @@ Our app is currently in the production stages. For now, just sit and wait. Fork 
 
 ## Wireframe
 
-![Coming soon!]()
+<img src = "Home page.png"> <br>
+<img src = "categories page.png"> <br>
+<img src = "details page.png">
 
 ## Component Hierarchy Diagram
 
-![Coming Soon!]()
+<img src = "hierarchy diagram.png">
 
 ### Sources
 
