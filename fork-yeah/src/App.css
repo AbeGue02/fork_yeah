@@ -60,7 +60,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-image: url('./assets/home.png');
+    background-image: url('./assets/home.jpg');
     background-size: 100%;
     object-fit: cover;
     min-height: 50vh;
