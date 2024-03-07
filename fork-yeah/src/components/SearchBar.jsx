@@ -12,7 +12,7 @@ function SearchBar() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		navigate(`/search/${searchBarText.split(' ').join('-')}`)
+		navigate(`/search/${searchBarText.split(' ').join('+')}`)
 	}
 
 	return (
