@@ -84,6 +84,10 @@ main {
     font-style: normal;
 }
 
+.categories button:hover {
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -180,15 +184,39 @@ footer div ul {
     padding-inline-start: 0;
 }
 
+
 .horizontal-flex {
     display: flex;
-    flex-direction: row;
+    width: 400px;
     align-items: center;
+    justify-content: center;
+    margin: 30px 20px 30px 20px;
 }
 
 .vertical-flex {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    text-align: center;
+}
+
+.vertical-flex button{
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -20px;
+    border: none;
+    color: white;
+    background-color: rgba(61, 61, 61, 0.563);
+    border-radius: 5px;
+    font-size: 15åpx;
+}
+
+.slideup{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    background-color: rgba(124, 124, 124, 0.501);
+    text-align: center;
+    margin-bottom: -240px;
 }
 
 .html-spinner{
