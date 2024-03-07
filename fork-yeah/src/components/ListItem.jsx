@@ -6,17 +6,19 @@ export default function ListItem({ meal }) {
 	return (
 		<div className="listItem horizontal-flex">
 			<div className="listItemImageContainer">
-				<img src={meal.strMealThumb} alt={'Not available'} />
+				<img src={meal.strMealThumb} width="400px" alt={'Not available'} />
 			</div>
-			<div className="vertical-flex">
-				<h4>{meal.strMeal}</h4>
-				<button
-					onClick={() => {
-						navigate(`/meals/${meal.idMeal}`)
-					}}
-				>
-					Go to Recipe
-				</button>
+			<div className="slideup">
+				<div className="vertical-flex">
+					<h4>{meal.strMeal}</h4>
+					<button
+						onClick={() => {
+							navigate(`/meals/${meal.idMeal}`)
+						}}
+					>
+						Go to Recipe
+					</button>
+				</div>
 			</div>
 		</div>
 	)
