@@ -60,7 +60,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-image: url('./assets/home.png');
+    background-image: url('https://img.freepik.com/premium-photo/organic-food-fresh-vegetables-fruits-dark-background_187166-25550.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707782400&semt=ais');
     background-size: 100%;
     object-fit: cover;
     min-height: 50vh;
