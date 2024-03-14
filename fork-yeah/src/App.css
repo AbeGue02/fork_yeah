@@ -1,0 +1,399 @@
+
+body {
+    background-color: whitesmoke;
+    color: #1e1e1e;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+header input[type=text] {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #aaaaaa;
+}
+
+header input[type=text]::placeholder {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+header button {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.listScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px
+}
+
+.homeScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('./assets/home.jpg');
+    background-size: 100%;
+    object-fit: cover;
+    min-height: 50vh;
+    flex: 1 0 auto;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0.5;
+    justify-content: space-between;
+
+    margin: 10px;
+    margin-right: 50px;
+    max-height: 300px;
+}
+
+.categories button {
+    flex: 1;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 150px;
+    background-color: whitesmoke;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.categories button:hover {
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaaaaa;
+    color: whitesmoke;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 2em;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    animation: navItemFill .3s linear;
+    animation-fill-mode: both;
+    /* background-color: #1e1e1e;
+    color: whitesmoke; */
+}
+
+h1 {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 50px;
+    margin: 10px auto
+}
+
+h2, h3, h4 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+p, a {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: gray
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 10px 0;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 1em
+}
+
+footer div ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-inline-start: 0;
+}
+
+
+.horizontal-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-flex {
+    display: flex;
+    text-align: center;
+}
+
+.listItem {
+    width: 400px;
+    margin: 30px 20px 30px 20px;
+}
+
+.listItemImage {
+    width: 400px;
+}
+
+.listItemDetails h4 {
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.listItemButton {
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    margin-left: auto;
+    border: none;
+    color: white;
+    background-color: rgba(61, 61, 61, 0.563);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.slideup{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    background-color: rgba(124, 124, 124, 0.501);
+    text-align: center;
+    margin-bottom: -240px;
+}
+
+.html-spinner{
+    width:100px;
+    height:100px;
+    border:4px solid rgba(255, 255, 255, 0.5);
+    border-top:4px solid white;
+    border-radius:50%;
+    margin: 25px;
+    transition-duration: 1.2s;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes navItemFill {
+    from {
+        background-color: #aaaaaa;
+    }
+    to {
+        background-color: #1e1e1e;
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeScreen {
+        background-image: url('https://i.pinimg.com/736x/d0/62/0e/d0620e7e8a00dbbf557b1de7bda75a7d.jpg');
+    }
+
+    .categories {
+        overflow: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        padding: 8px 2px;
+        margin: 0;
+        border: 0;
+        border-top: 1px solid #aaaaaa;
+    }
+
+    footer div h4 {
+        margin: 2px;
+    }
+
+    nav ul li {
+        padding: 10px
+    }
+
+    .listItem {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .listItemImage {
+        width: 200px;;
+    }
+
+    .slideup {
+        width: 200px;
+        margin-bottom: -95px;
+        height: 100px
+    }
+
+    .listItemDetails h4 {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .listItemDetails button {
+        margin: 0px;
+    }
+}
+
+.resultsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* abril fatface for recipe titles */
+/* Fugaz One for Header title */
+/* PT Sans for regular text */
+
+.detailsPage{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 40px 30px 70px 30px;
+}
+
+.mealPic{
+    margin-bottom: 30px;
+}
+
+.mealInfo{
+    width: 550px;
+}
+
+.instruction{
+    margin-top: 50px;
+}
+
+.mealName{
+    margin-top: 30px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.youtube{
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
